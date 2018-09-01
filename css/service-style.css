@@ -1,0 +1,359 @@
+/**
+ * Page name
+ * Copyright 2017
+ * Author
+ * Licensed 
+ */
+/*------------------------------------*\
+    Content
+\*------------------------------------*/
+/**
+ * Content............You're reading it!
+ * Globel...............Set common style
+ * Layout...........Set grid
+ * Components...........Set components styles
+ */
+
+
+/*------------------------------------*\
+    Globel
+\*------------------------------------*/
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+html,body{
+	font-size: 14px;
+	font-family: Arial, '微軟正黑體', sans-serif;
+	color: #fff;
+	background: url("../design/web-element/3-service/page-3-service-01.jpg") center center fixed no-repeat;;
+	background-size: cover;
+	background-attachment: fixed;
+	padding:0px;
+	margin: 0px;
+}
+h1,h2,h3,h4,h5,h6,p{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover{
+	color: #ea5514;
+}
+/*------------------------------------*\
+    $Globel
+\*------------------------------------*/
+h1{
+	font-family: Arial, '微軟正黑體', sans-serif;
+	font-size: 45px;
+	font-weight:bold;
+	-moz-osx-font-smoothing: grayscale;
+}
+h2{
+	font-family: Arial, '微軟正黑體', sans-serif;
+	font-weight:bold;
+	font-size: 36px;
+	line-height: 36px;
+	-moz-osx-font-smoothing: grayscale;	
+}
+h3{
+	font-family: Arial, '微軟正黑體', sans-serif;
+	font-size: 20px;
+	font-weight:bold;
+	-moz-osx-font-smoothing: grayscale;	
+}
+h4{
+	font-family: Arial, '微軟正黑體', sans-serif;
+	font-weight:bold;
+	font-size: 16px;	
+	-moz-osx-font-smoothing: grayscale;
+}
+h5{
+	font-family: Arial, '微軟正黑體', sans-serif;
+	font-size: 12px;
+	-moz-osx-font-smoothing: grayscale;	
+}
+p.para{
+	font-family: Arial, '微軟正黑體', sans-serif;
+	font-size: 14px;
+	line-height: 28px;
+	letter-spacing: 0;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------------------*\
+    Layout
+\*------------------------------------*/
+/* jumbotron-left*/
+.jumbotron {
+	display: block;
+	top:0;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 1085px;
+	height: 730px;
+	padding-top: 10%;
+	
+}
+.jumbotron-item{
+	display:inline-block;
+	float: left;
+}
+.jumbotron-Og{
+	display: inline-block;
+	width: 535px;
+	height: 450px;
+	background-color: rgba(234,85,20,0.7);
+	padding: 44px 0;
+}
+.icon-left{
+	float: left;
+}
+.title-service{
+	line-height: 70px;
+	text-align: center;
+}
+.title-para{
+	text-align: center;
+	line-height: 28px;
+}
+.title{
+	width: 530px;
+	height: 50px;
+	margin-top: 5px;
+	text-align: justify;
+}
+.title:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.para{
+	width: 530px;
+	margin-top: 4px;
+	text-align: justify;
+}
+.para:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+.jumbotron-right {
+	float: right;
+	display: block;
+
+}
+#nav li {
+	width: 50px; 
+	float: left; 
+	margin: 0px; 
+	list-style: none;
+}
+#nav a { 
+	width: 50px; 
+	height: 120px; 
+	padding-top: 65%;
+	display: block; 
+	background-color:rgba(0,0,0,0.5);
+	text-align: center;
+	color: #fbfbfb;
+}
+
+#nav a:focus { 
+	outline: none; 
+}
+.active, .page:hover {
+  background-color: #717171;
+}
+#nav img { 
+	border: none; 
+	display: block 
+}
+.icon-block{
+	height: 120px;
+}
+.icon-btn-left{
+	display: block;
+	background-color:rgba(0,0,0,0.5);
+	color: #fbfbfb;
+	width: 50px;
+	height: 120px;
+	padding: 52px 17px; 
+}
+.icon-btn-left i{
+	line-height: 32px;
+	font-size: 16px;
+}
+/* btns */
+.icon-btn{
+	display: inline-block;
+	float: right;
+	background-color: rgba(0,0,0,0.5);
+	color: #fbfbfb;
+	width: 50px;
+	height: 100%;
+	/*border: 1px solid red;*/
+	text-align: center;
+}
+.icon-btn i{
+	line-height: 32px;
+	font-size: 16px;
+}
+.fab{
+	font-family: "fontello";
+	
+}
+.none{
+	display: none;
+}
+.slide {
+  display: none;
+  -webkit-animation-name: slidein;
+  -webkit-animation-duration: 1s;
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+.slideshow-container {
+  max-width: 1000px;
+  overflow: hidden;
+}
+@-moz-keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+    
+    to {
+      margin-left: 0%;
+    }
+  }
+@keyframes slidein {
+   from {
+      margin-left: 100%;
+    }
+    
+    to {
+      margin-left: 0%;
+      
+    }
+}
+
+@media (max-width: 1200px){
+	.jumbotron {
+		display: inline-block;
+		padding-top:67px; 
+		width: 550px;
+		height:100%;
+	}
+	.jumbotron-item{
+		display:inline-block;
+		margin: 0 auto;
+	}
+	.jumbotron-Og{
+		display: inline-block;
+		width: 550px;
+		height: 450px;
+		background-color: rgba(234,85,20,0.7);
+	}
+	.title{
+		width: 550px;
+	}
+	.para{
+		width: 550px;
+	}
+
+}
+@media (max-width: 480px){
+	.jumbotron {
+		display: inline-block;
+		padding-top:95px; 
+		width: 100%;
+		height:100%;
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+	.jumbotron-item{
+		display:inline-block;
+	}
+	.jumbotron-Og{
+		display: inline-block;
+		width: 100%;
+		height: 450px;
+		background-color: rgba(234,85,20,0.7);
+
+	}
+	.title{
+		display: inline-block;
+		font-size: 40px;
+		width: 100%;
+		text-align: justify;
+	}
+	.title:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+
+	.para{
+		display: inline-block;
+		width: 100%;
+		top: -35px;
+		text-align: justify;
+	}
+	.para:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+	.jumbotron-right {
+		top:-40px;
+	}
+	#nav li {
+		display: none;
+	}
+	#nav a { 
+		display: none;
+	}
+	.slideshow-container {
+		width: 100%;
+		overflow: hidden;
+	}
+	#prev{
+		display: inline-block;
+	}
+	#next{
+		display: inline-block;
+	}
+	.slide{
+		width: 100%;
+		height: 100%;
+	}
+	.img{
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.icon-btn-left{
+		display: block;
+		background-color:rgba(0,0,0,0.5);
+		color: #fbfbfb;
+		width: 50%;
+		height: 50px;
+		padding-left: 23%;
+	}
+	.icon-btn-left i{
+		line-height: 16px;
+		font-size: 16px;
+	}
+	.icon-block{
+		height: 50px;
+	}
+}
